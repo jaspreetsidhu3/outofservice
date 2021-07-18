@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/black"
+        android:src="@drawable/ic_baseline_local_fire_department_24"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10pt"
+        android:id="@+id/streak"
+        android:onClick="openStreak"
+        android:layout_marginLeft="10pt"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        ></ImageButton>
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10pt"
+        android:id="@+id/container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        ></LinearLayout>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/black"
+        android:src="@drawable/ic_baseline_more_time_24"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10pt"
+        android:id="@+id/settings"
+        android:onClick="openSettings"
+        android:layout_marginRight="10pt"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"></ImageButton>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/timesprint"
+        android:textSize="50pt"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Achievements"
+        android:id="@+id/customtoast"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
