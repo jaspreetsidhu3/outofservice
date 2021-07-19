@@ -31,7 +31,7 @@ OutOfService helps you to calm down your mobile usage.
 3. debug code or add features or anything you want to add
 4. Send the pull request
 
-## Authors
+## Author
 Jaspreet Singh
 
 
